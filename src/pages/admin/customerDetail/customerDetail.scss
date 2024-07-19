@@ -1,0 +1,138 @@
+.detail {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px;
+        background: #fff;
+        // box-shadow: 0 0 10px rgba(0, 0,      0, 0.1);
+        border-radius: 8px;
+        margin-bottom: 20px;
+        margin: 0 auto;
+        margin-top: 30px;
+        max-width: 980px;
+    }
+
+    &__info {
+        flex: 1;
+
+        &__name, &__id, &__budget, &__address, &__phone {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        &__name {
+            font-weight: bold;
+            font-size: 24px;
+            color: #444;
+        }
+
+        &__id {
+            color: #666;
+        }
+
+        &__budget {
+            font-size: 20px;
+            color: #008000;
+        }
+
+        &__address, &__phone {
+            color: #555;
+        }
+    }
+
+    &__btns {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+
+        &__payment, &__edit, &__history {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;    
+        }
+
+        &__payment {
+            background: #007bff;
+            color: #fff;
+        }
+
+        &__edit {
+            background: #ffa500;
+            color: #fff;
+        }
+
+        &__history {
+            background: #202b41;
+            color: #fff;
+        }
+    }
+}
+
+.history {
+    &__carts {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__cart {
+        padding: 10px;
+        background: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        color: #333;
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.edit-model {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__input {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+    }
+
+    &__btn {
+        padding: 10px 20px;
+        background: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        align-self: flex-end;
+        transition: background 0.5s ease;
+
+        &:hover {
+            background: #218838;
+        }
+    }
+}

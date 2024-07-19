@@ -1,0 +1,71 @@
+#header {
+  background-color: #202b41;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+#header .header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .header__left {
+  display: flex;
+  align-items: center;
+}
+#header .header__left .hamburger {
+  cursor: pointer;
+}
+#header .header__left form {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+#header .header__left form input[type=text] {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #394b64;
+  color: #fff;
+  margin-left: 8px;
+  width: 200px;
+  transition: width 0.3s ease-in-out;
+}
+#header .header__left form input[type=text]:focus {
+  width: 250px;
+}
+#header .header__left form svg {
+  font-size: 20px;
+  color: #fff;
+}
+#header .header__right {
+  display: flex;
+  align-items: center;
+}
+#header .header__right img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+#header .header__right select {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #394b64;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 20px;
+}
+#header .header__right select option {
+  background-color: #394b64;
+  color: #fff;
+}
+/*# sourceMappingURL=header.css.map */

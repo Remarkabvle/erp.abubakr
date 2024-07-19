@@ -1,0 +1,112 @@
+.sidebar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: hsl(220, 34%, 19%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-right: 1px solid #e0e0e070;
+  overflow-y: auto;
+  padding-top: 20px;
+  z-index: 100;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+      margin: 0;
+      color: #fff;
+    }
+  }
+
+  &__profile {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    font-size: 18px;
+    border-radius: 50%;
+    color: #202b41;
+    margin-right: 10px;
+  }
+
+  &__collection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+
+    .sidebar__item {
+      width: 100%;
+
+      .sidebar__link {
+        width: 100%;
+        padding: 20px 20px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        transition: background-color 0.3s ease;
+        color: #fff;
+        text-decoration: none;
+
+        span {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          width: 100%;
+
+          svg {
+            font-size: 20px;
+          }
+        }
+
+        &:hover {
+          background-color: rgba(195, 209, 243, 0.2);
+        }
+
+        &.active {
+          background-color: rgba(255, 255, 255, 0.893); 
+          color: #202b41 !important;
+          border: 1px solid white;
+          border-left: none;
+          span {
+            color: #202b41;
+          }
+        }
+      }
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: #a4a6b3;
+    gap: 16px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #ff4d4d;
+    }
+
+    svg {
+      font-size: 24px;
+      color: #a4a6b3;
+    }
+  }
+}
