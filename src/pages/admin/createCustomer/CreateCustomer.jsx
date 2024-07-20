@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useCreateCustomerMutation } from "../../../context/api/customerApi";
 import "./customerCreate.scss";
+import img from '../../../assets/img.avif'
 
 const initialState = {
     fname: "",
@@ -28,7 +29,7 @@ const CreateCustomer = () => {
 
     return (
         <div className="new-customer">
-            <h2 className="page-title">Add New Customer</h2>
+            <img src={img} alt="Customers image" />
             <form className="new-customer-form" onSubmit={handleCreate}>
                 <div className="form-fields">
                     <input
